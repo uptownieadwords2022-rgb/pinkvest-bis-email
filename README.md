@@ -42,11 +42,10 @@ Voice: witty, playful, confident — your fashionable best friend texting you. B
 
 | Variable | Purpose | Required |
 |---|---|---|
-| `{{first_name}}` | Personal greeting in the FOMO block | ✅ |
 | `{{company_address}}` | Legal sender address (CAN-SPAM / compliance) | recommended |
 | `{{unsubscribe_url}}` `{{preferences_url}}` | Footer compliance links | ✅ for sending |
 
-> In **Klaviyo** the conventions are usually `{{ first_name }}`, `{% unsubscribe %}`, etc. In **Shopify Email** they're `{{ customer.first_name }}` and the built-in unsubscribe link. Do a quick find/replace to match your platform's exact syntax.
+> In **Klaviyo** the unsubscribe link is usually `{% unsubscribe %}`; in **Shopify Email** it's the built-in unsubscribe link. Match the remaining `{{ ... }}` tags to your platform's exact syntax.
 
 ### Recommended image sizes
 - **Hero:** 1200 × 1500 px (2× of 600 × 750), JPG/PNG, < 200 KB
