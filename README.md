@@ -43,7 +43,6 @@ Voice: witty, playful, confident — your fashionable best friend texting you. B
 | Variable | Purpose | Required |
 |---|---|---|
 | `{{first_name}}` | Personal greeting in the FOMO block | ✅ |
-| `{{instagram_url}}` `{{tiktok_url}}` | Footer social links | optional |
 | `{{company_address}}` | Legal sender address (CAN-SPAM / compliance) | recommended |
 | `{{unsubscribe_url}}` `{{preferences_url}}` | Footer compliance links | ✅ for sending |
 
