@@ -25,18 +25,25 @@ Voice: witty, playful, confident — your fashionable best friend texting you. B
 
 ---
 
-## Merge variables
+## Assets & variables
 
-Replace these before (or at) send. Klaviyo/Shopify will resolve them automatically if the names match your data.
+### ✅ Live — already wired in (no action needed)
+
+| Element | Value |
+|---|---|
+| Logo (header + footer) | `…/UPTOWNIE_black_logo_20050px.jpg` — clickable, links to `https://uptownie.com` |
+| Hero image (top) | `…/6_a0e71dbf-…png` (product shot) |
+| Secondary image (desire section) | `…/coordsmoodboard1.png` (moodboard) |
+| Every CTA + both product images | `https://uptownie.com/collections/co-ord-sets/products/pure-linen-waistcoat-and-skirt-set` |
+
+> Note: the logo source is a **JPG** (no transparency). On the cream `#F8F6F2` background it may show a faint white box. If you have a **transparent PNG** version, swap the two `src` URLs for a cleaner look.
+
+### Still dynamic — resolved by your ESP
 
 | Variable | Purpose | Required |
 |---|---|---|
 | `{{first_name}}` | Personal greeting in the FOMO block | ✅ |
-| `{{product_url}}` | Destination for **every** CTA + clickable image (used 6×) | ✅ |
-| `{{hero_image}}` | Top hero image | ✅ |
-| `{{product_image}}` | Mid-email lifestyle/detail image | ✅ |
-| `{{logo}}` | Brand logo (header + footer) | ✅ |
-| `{{instagram_url}}` `{{tiktok_url}}` `{{website_url}}` | Footer social links | optional |
+| `{{instagram_url}}` `{{tiktok_url}}` | Footer social links | optional |
 | `{{company_address}}` | Legal sender address (CAN-SPAM / compliance) | recommended |
 | `{{unsubscribe_url}}` `{{preferences_url}}` | Footer compliance links | ✅ for sending |
 
@@ -70,7 +77,8 @@ Every image already has descriptive **ALT text** and a styled fallback, so the e
 ---
 
 ## Before you send — checklist
-- [ ] Swap in real `{{product_url}}`, image URLs, and logo
+- [x] Real logo, hero/secondary images, product link & homepage link wired in
+- [ ] (Optional) Supply a transparent-PNG logo to avoid a white box on the cream background
 - [ ] Confirm merge-tag syntax matches your ESP (Klaviyo vs Shopify)
 - [ ] Set a subject line (suggestions below) + confirm the preheader
 - [ ] Send a seed test to Gmail + Apple Mail + Outlook before the real send
